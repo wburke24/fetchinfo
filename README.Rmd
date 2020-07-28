@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# fetchinfo
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Idk, it's like neofetch but for R and bad.
+
+## Installation
+
+
+``` r
+devtools::install_github(repo = "wburke24/fetchinfo")
+```
+
+<!-- You can install the released version of fetchinfo from [CRAN](https://CRAN.R-project.org) with: -->
+
+<!-- ``` r -->
+<!-- install.packages("fetchinfo") -->
+<!-- ``` -->
+
+## Example
+
+Code goes beep boop
+
+```{r example}
+library(fetchinfo)
+fetchinfo()
+```
+
+
