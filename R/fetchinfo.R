@@ -11,6 +11,13 @@ fetchinfo = function() {
   cpuinfo = unlist(strsplit(cpuinfo, "  +"))
   cpucore = paste0(cpuinfo[3],"(",cpuinfo[4],")")
 
+  # gpu = system("wmic path win32_VideoController get name", intern = T)
+  # gpu = trimws(substr(gpu[2], 0, nchar(gpu[2]) - 2))
+  #
+  # ram = system('wmic MEMORYCHIP get BankLabel, DeviceLocator, MemoryType, TypeDetail, Capacity, Speed', intern = T)
+  #
+  # ram = system('wmic MEMORYCHIP', intern = T)
+
   catout = c(
     "\n",
     "\t", "ooooooooo.   ", "      OS:", Sys.info()[c(1,2)], "\n",
