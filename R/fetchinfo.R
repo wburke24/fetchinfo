@@ -8,13 +8,13 @@
 fetchinfo = function(vars = NULL) {
 
   # --- Styles ---
-  rblue = make_style(rgb(22,92,170, maxColorValue = 255))
-  rgrey = make_style(rgb(203,206,208, maxColorValue = 255))
+  rblue = make_style(grDevices::rgb(22,92,170, maxColorValue = 255))
+  rgrey = make_style(grDevices::rgb(203,206,208, maxColorValue = 255))
 
   # --- Variables & Formatting ---
   # header stuff
   header = c(rblue(Sys.info()[8]) %+% rgrey("@") %+% rblue(Sys.info()[4]))
-  uline = rgrey(strrep("-", nchar(headtxt)))
+  uline = rgrey(strrep("-", nchar( paste0(Sys.info()[8], "@", Sys.info()[4]) )))
 
   # system and setup info
   os = c(rblue("OS") %+% rgrey(": " %+% paste0(Sys.info()[c(1,2)],collapse = "") ))
