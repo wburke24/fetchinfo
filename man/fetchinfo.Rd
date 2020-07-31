@@ -4,7 +4,7 @@
 \alias{fetchinfo}
 \title{fetchinfo}
 \usage{
-fetchinfo()
+fetchinfo(vars = NULL)
 }
 \description{
 Outputs info on R session, host machine, and pretty picture
