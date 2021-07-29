@@ -8,8 +8,11 @@
 fetchinfo = function(vars = NULL) {
 
   # --- Styles ---
-  rblue = make_style(grDevices::rgb(22,92,170, maxColorValue = 255))
-  rgrey = make_style(grDevices::rgb(203,206,208, maxColorValue = 255))
+  rblue = make_style(grDevices::rgb(22,92,170, 255, maxColorValue = 255))
+  #rblue = crayon::make_style(grDevices::hsv((212/360),0.87, 0.67, 1))
+
+  rgrey = crayon::make_style(grDevices::rgb(203,206,208, 255, maxColorValue = 255))
+  #rgrey = make_style(grDevices::hsv((204/360), 0.02, 0.82, 1))
 
   # --- Variables & Formatting ---
   # header stuff
